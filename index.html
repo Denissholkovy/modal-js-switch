@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>modal-all</title>
+  </head>
+  <body>
+    <div class="content-block">
+      <div class="card" onclick="modal(1)">card x25</div>
+      <div class="card" onclick="modal(2)">card x100</div>
+      <div class="card" onclick="modal(3)">card x250</div>
+    </div>
+
+    <div class="modal-blur one">
+      <div class="modal-block">
+        card x25
+        <div class="close" onclick="modal(4)">+</div>
+      </div>
+    </div>
+
+    <div class="modal-blur two">
+      <div class="modal-block">
+        card x100
+        <div class="close" onclick="modal(5)">+</div>
+      </div>
+    </div>
+
+    <div class="modal-blur three">
+      <div class="modal-block">
+        card x250
+        <div class="close" onclick="modal(6)">+</div>
+      </div>
+    </div>
+
+    <script src="modal.js"></script>
+  </body>
+</html>
