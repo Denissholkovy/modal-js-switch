@@ -16,15 +16,19 @@ function modal(tes) {
     //close modal//
 
     case 4:
-      document.querySelector(".one").classList.remove("appeared");
+     let  close =  document.querySelectorAll(".modal-blur");
+
+     close.forEach(el => {
+      el.classList.remove("appeared");
+     });
       break;
 
-    case 5:
-      document.querySelector(".two").classList.remove("appeared");
-      break;
+    // case 5:
+    //   document.querySelector(".two").classList.remove("appeared");
+    //   break;
 
-    case 6:
-      document.querySelector(".three").classList.remove("appeared");
-      break;
+    // case 6:
+    //   document.querySelector(".three").classList.remove("appeared");
+    //   break;
   }
 }
