@@ -1,34 +1,26 @@
-function modal(tes) {
-  switch (tes) {
+let c = console.log;
+
+function modal(param) {
+  switch (param) {
     //open modal//
-    case 1:
+
+    case "x25":
       document.querySelector(".one").classList.add("appeared");
       break;
 
-    case 2:
+    case "x100":
       document.querySelector(".two").classList.add("appeared");
-      break;
+    break;
 
-    case 3:
+    case "x250":
       document.querySelector(".three").classList.add("appeared");
-      break;
-      
+    break;
     //close modal//
 
-    case 4:
-     let  close =  document.querySelectorAll(".modal-blur");
-
-     close.forEach(el => {
-      el.classList.remove("appeared");
-     });
-      break;
-
-    // case 5:
-    //   document.querySelector(".two").classList.remove("appeared");
-    //   break;
-
-    // case 6:
-    //   document.querySelector(".three").classList.remove("appeared");
-    //   break;
+    case 'close': 
+      document.querySelectorAll('.modal-blur').forEach((el) => {
+        el.classList.remove('appeared');
+      })
+    break;
   }
 }
