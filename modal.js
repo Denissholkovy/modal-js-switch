@@ -6,7 +6,7 @@ function modal(param) {
 
     case "x25":
       document.querySelector(".one").classList.add("appeared");
-      break;
+    break;
 
     case "x100":
       document.querySelector(".two").classList.add("appeared");
